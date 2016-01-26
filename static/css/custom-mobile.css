@@ -1,0 +1,117 @@
+/*!
+ * Author: Nabil Enayet January 2016
+ */
+
+.card-content > span{
+	font-size: 35px !important;
+}
+
+.card-content > span.social {
+	font-size:26px;
+}
+
+input {
+	font-size:50px!important; 
+	padding:40px;
+	text-align:center;
+}
+
+.input-field label {
+	font-size:40px;
+}
+
+.player-input input {
+	height:6rem;
+}
+
+.switch {
+	display:none!important;
+}
+
+.fixed-footer div {
+	font-size:30px;
+}
+
+.mobile-switch {
+	display:block;
+	font-size: 45px !important;
+}
+
+.modal-trigger {
+	font-size:25px;
+}
+
+.modal-footer > a {
+	font-size:25px;
+}
+
+.mobile {
+	display:block;
+	font-size:2.5rem;
+}
+
+.desktop {
+	display:none;
+}
+
+.versus-bubble div {
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 40px;
+    height: 75px;
+    width: 75px;
+    line-height: 80px;
+    font-weight: bold;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* AutoComplete */
+.autocomplete-suggestions { font-size:40px; border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { font-size:40px; padding: 20px 30px; white-space: nowrap; overflow: hidden; margin: 15px 15px; background-color:whitesmoke;}
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF;}
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+
+
+
+/* Intro JS Mobile Overrides */
+
+.introjs-tooltip * {
+	font-size:40px;
+}
+
+.introjs-arrow.top {
+	top:-40px;
+}
+
+.introjs-arrow {
+	border-width:20px;
+}
+
+.introjs-tooltip {
+	max-width:100vw;
+	width:100vw;
+	padding:50px;
+}
+
+.introjs-bullets ul li { 
+	margin: 0 20px; 
+}
+
+.introjs-bullets {
+	margin:30px;
+}
+
+.introjs-bullets ul li a {
+	width:20px;
+	height:20px;
+}
+
+

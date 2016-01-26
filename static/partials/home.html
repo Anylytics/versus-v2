@@ -1,0 +1,88 @@
+<div class="head-container row" data-intro='Thank-you for visiting our Tennis Players comparison app!'>
+	<div class="progress" id="search-loader" ng-show="search_loading">
+		<div class="indeterminate"></div>
+	</div>
+	<div class="player-input left col s6" data-intro='First, start by typing a player you are interested in this box'>
+		<div class="input-field">
+			<input id="opp1" type="text" class="validate" ng-model="matchup.opp1.name">
+			<label for="opp1">Opponent 1</label>
+		</div>
+	</div>
+	<div class="player-input right col s6" data-intro='Then, pick his opponent in this box!'>
+		<div class="input-field">
+			<input id="opp2" type="text" class="validate" ng-model="matchup.opp2.name">
+			<label for="opp2">Opponent 2</label>
+		</div>
+	</div>
+
+	<div class="versus-bubble">
+		<div>VS</div>
+	</div>
+</div>
+
+<button ng-click="randomizeAngle()">Spin!</button>
+
+<div class="body-content desktop">
+	<div class="row">
+		<div class="left-content col s12 m6">
+			<div class="row">
+				<div class="col l6 m12 offset-l3">
+					<div class="card white darken-1 animated fadeInLeft" ng-show="matchup.gauge_angle!=0">
+						<div class="card-image player-image">
+							<img src="http://www.coretennis.net/communityImg/players/novak-djokovic-2-th.jpg">
+							<span class="card-title">Novak Djokovic</span>
+						</div>
+						<div class="card-content black-text">
+							<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">View profile</a>
+							<a href="#">View Matches</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right-content col s12 m6">
+			<div class="row">
+				<div class="col l6 m12 offset-l3">
+					<div class="card white darken-1 animated fadeInRight" ng-show="matchup.gauge_angle!=0">
+						<div class="card-image player-image">
+							<img src="http://www.coretennis.net/ct/1/image/Players/MJPage/ATP/M/Fiche/Murray_Andy.jpg">
+							<span class="card-title">Andy Murray</span>
+						</div>
+						<div class="card-content black-text">
+							<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">View profile</a>
+							<a href="#">View Matches</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="body-content mobile">
+Mobile Content
+</div>
+
+<div class="tennis-gauge" ng-class="matchup.animate">
+	<img id="outer" src="./static/img/gauge_outer.png"/>
+	<div id="inner-pointer" ng-style="{'transform': 'rotate('+matchup.gauge_angle+'deg)', '-webkit-transform': 'rotate('+matchup.gauge_angle+'deg)', '-ms-transform': 'rotate('+matchup.gauge_angle+'deg)'}">
+		<img id="inner" src="./static/img/gauge_inner.png"/>
+		<img id="pointer" src="./static/img/gauge_pointer.png"/>
+	</div>
+	<div id="advantage-container">
+		<h5>ADVANTAGE</h5>
+		<div ng-class="matchup.winner_side">{{matchup.winner}}</div>
+	</div>
+</div>
+
+<div ng-include="'./static/partials/loader.html'"></div>
